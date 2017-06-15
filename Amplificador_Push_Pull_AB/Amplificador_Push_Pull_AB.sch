@@ -1906,8 +1906,8 @@ type 0207, grid 7.5 mm</description>
 <wire x1="2.921" y1="-1.143" x2="2.54" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-0.889" x2="3.175" y2="0.889" width="0.1524" layer="51"/>
 <wire x1="3.429" y1="0" x2="3.81" y2="0" width="0.6096" layer="51"/>
-<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.54" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.286" y="-0.5588" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.429" y1="-0.3048" x2="-3.175" y2="0.3048" layer="51"/>
@@ -16194,7 +16194,7 @@ Thru hole 2.54mm spacing with 9.7mm diameter</description>
 <part name="C5" library="rcl" deviceset="C-EU" device="025-025X050" value="10pF"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="PTH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="RRIGHT" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="RRIGHT" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="RMIC" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="*741" device="P" technology="LM"/>
@@ -16210,13 +16210,13 @@ Thru hole 2.54mm spacing with 9.7mm diameter</description>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="0.1uF"/>
 <part name="RIN" library="rcl" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="RIN1" library="rcl" deviceset="R-EU_" device="0207/10" value="100k"/>
+<part name="RIN1" library="rcl" deviceset="R-EU_" device="0207/7" value="100k"/>
 <part name="RIN2" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P2" library="pot" deviceset="3RP/1610N" device="" value="10k"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="RLEFT" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="RLEFT" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="IC3" library="linear" deviceset="78*" device="TV" technology="8"/>
 </parts>
 <sheets>
