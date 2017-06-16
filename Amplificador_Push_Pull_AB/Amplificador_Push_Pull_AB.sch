@@ -15981,8 +15981,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <package name="9.7ELECTRET">
 <circle x="0" y="0" radius="4.801" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="4.3" width="0.127" layer="21"/>
-<pad name="+" x="1.3" y="-0.032" drill="0.8" diameter="1.778" shape="long" rot="R90"/>
-<pad name="-" x="-1.3" y="-0.032" drill="0.8" diameter="1.778" shape="long" rot="R270"/>
+<pad name="+" x="1.3" y="-0.032" drill="0.8" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="-" x="-1.3" y="-0.032" drill="0.8" diameter="1.6764" shape="long" rot="R270"/>
 <text x="-10.4" y="-7.3" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-10.7" y="-5.6" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
@@ -17411,7 +17411,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="JP1" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="PTH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="RRIGHT" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
-<part name="RMIC" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="RMIC" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="*741" device="P" technology="LM"/>
 <part name="P+4" library="supply1" deviceset="+18V" device=""/>
@@ -17435,7 +17435,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="RLEFT" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="IC3" library="linear" deviceset="78*" device="TV" technology="8"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="RLED" library="rcl" deviceset="R-EU_" device="0207/10" value="330"/>
+<part name="RLED" library="rcl" deviceset="R-EU_" device="0207/7" value="330"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
