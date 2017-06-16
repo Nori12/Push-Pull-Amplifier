@@ -16208,7 +16208,7 @@ Thru hole 2.54mm spacing with 9.7mm diameter</description>
 <part name="C7" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="0.1uF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="0.1uF"/>
-<part name="RIN" library="rcl" deviceset="R-EU_" device="0207/7" value="100k"/>
+<part name="RIN" library="rcl" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="RIN1" library="rcl" deviceset="R-EU_" device="0207/7" value="100k"/>
 <part name="RIN2" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
