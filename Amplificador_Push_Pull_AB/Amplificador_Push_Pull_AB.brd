@@ -158,8 +158,6 @@
 <wire x1="99.04" y1="0" x2="99.04" y2="49.835" width="0" layer="20"/>
 <wire x1="99.04" y1="49.835" x2="0" y2="49.835" width="0" layer="20"/>
 <wire x1="0" y1="49.835" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="0" x2="0" y2="49.53" x3="-3.81" y3="24.765" textsize="1.778" layer="1"/>
-<dimension x1="0" y1="0" x2="99.06" y2="0" x3="49.53" y3="-10.16" textsize="1.778" layer="1"/>
 <hole x="3.81" y="3.81" drill="3.2"/>
 <hole x="3.81" y="45.72" drill="3.2"/>
 <hole x="95.25" y="45.72" drill="3.2"/>
@@ -1928,6 +1926,23 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <text x="-10.4" y="-7.3" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-10.7" y="-5.6" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="LED5MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+5 mm, round</description>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="pinhead">
@@ -2219,6 +2234,8 @@ design rules under a new name.</description>
 <element name="JP2" library="pinhead" package="1X03" value="" x="11.43" y="7.62" rot="R90"/>
 <element name="RLEFT" library="rcl" package="0207/7" value="10k" x="77.47" y="6.985" rot="R90"/>
 <element name="IC3" library="linear" package="TO220V" value="788TV" x="80.01" y="38.1"/>
+<element name="LED1" library="adafruit" package="LED5MM" value="" x="111.76" y="33.02"/>
+<element name="RLED" library="rcl" package="0207/10" value="330" x="105.41" y="38.1" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -2517,8 +2534,10 @@ design rules under a new name.</description>
 <wire x1="8.255" y1="26.67" x2="8.255" y2="17.78" width="0.8128" layer="16"/>
 <wire x1="8.255" y1="17.78" x2="10.16" y2="15.875" width="0.8128" layer="16"/>
 <wire x1="10.16" y1="15.875" x2="10.795" y2="15.875" width="0.8128" layer="16"/>
-<wire x1="8.255" y1="26.67" x2="8.255" y2="22.86" width="0" layer="19" extent="16-16"/>
 <via x="10.795" y="15.875" extent="1-16" drill="0.8" diameter="1.6764" shape="octagon"/>
+<contactref element="RLED" pad="2"/>
+<wire x1="97.155" y1="38.1" x2="105.41" y2="43.18" width="0" layer="19" extent="16-16"/>
+<wire x1="8.255" y1="22.86" x2="8.255" y2="26.67" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$13">
 <contactref element="RBC" pad="1"/>
@@ -2784,6 +2803,8 @@ design rules under a new name.</description>
 <wire x1="84.455" y1="30.48" x2="84.455" y2="28.575" width="0.8128" layer="16"/>
 <wire x1="84.455" y1="28.575" x2="86.995" y2="26.035" width="0.8128" layer="16"/>
 <wire x1="86.995" y1="26.035" x2="90.805" y2="26.035" width="0.8128" layer="16"/>
+<contactref element="LED1" pad="A"/>
+<wire x1="90.805" y1="26.035" x2="110.49" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="C6" pad="-"/>
@@ -2910,6 +2931,11 @@ design rules under a new name.</description>
 <wire x1="17.145" y1="44.45" x2="15.24" y2="44.45" width="0.8128" layer="16"/>
 <wire x1="15.24" y1="44.45" x2="13.335" y2="42.545" width="0.8128" layer="16"/>
 <wire x1="13.335" y1="42.545" x2="13.335" y2="39.37" width="0.8128" layer="16"/>
+</signal>
+<signal name="N$18">
+<contactref element="LED1" pad="K"/>
+<contactref element="RLED" pad="1"/>
+<wire x1="105.41" y1="33.02" x2="113.03" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
