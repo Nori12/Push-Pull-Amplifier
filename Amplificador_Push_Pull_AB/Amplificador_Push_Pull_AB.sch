@@ -17352,6 +17352,9 @@ Source: http://www.osram.convergy.de/</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="CNAME" value="Amplificador Push-Pull"/>
+<attribute name="CREVISION" value="1.0"/>
+<attribute name="DESIGNER" value="Pedro Nori"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -17394,7 +17397,9 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="10uF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
+<part name="AUI_MAUE" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="">
+<attribute name="TESTE1" value="valordoteste1"/>
+</part>
 <part name="Q7" library="transistor" deviceset="BC547" device=""/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="TO92"/>
 <part name="Q4" library="transistor" deviceset="BC547" device=""/>
@@ -17477,7 +17482,14 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="GND3" gate="1" x="111.76" y="-5.08" rot="R180"/>
 <instance part="C3" gate="G$1" x="137.16" y="-2.54"/>
 <instance part="GND4" gate="1" x="137.16" y="-25.4"/>
-<instance part="FRAME2" gate="G$1" x="-25.4" y="-45.72"/>
+<instance part="AUI_MAUE" gate="G$1" x="-25.4" y="-45.72" smashed="yes">
+<attribute name="DRAWING_NAME" x="156.21" y="-34.29" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="156.21" y="-39.37" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="170.18" y="-44.45" size="2.54" layer="94" font="vector"/>
+<attribute name="CNAME" x="156.21" y="-29.21" size="2.54" layer="94" font="vector"/>
+<attribute name="DESIGNER" x="200.86" y="-39.37" size="2.54" layer="94" font="vector"/>
+<attribute name="CREVISION" x="209.52" y="-44.55" size="2.54" layer="94" font="vector"/>
+</instance>
 <instance part="Q7" gate="G$1" x="71.12" y="45.72"/>
 <instance part="Q3" gate="G$1" x="63.5" y="93.98"/>
 <instance part="Q4" gate="G$1" x="81.28" y="86.36"/>
