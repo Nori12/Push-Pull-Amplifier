@@ -16761,7 +16761,7 @@ Thru hole 2.54mm spacing with 9.7mm diameter</description>
 <junction x="172.72" y="68.58"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="+5V" class="0">
 <segment>
 <pinref part="RMIC" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="81.28" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
