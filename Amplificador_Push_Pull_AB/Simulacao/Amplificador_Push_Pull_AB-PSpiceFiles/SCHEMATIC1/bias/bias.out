@@ -1,0 +1,276 @@
+
+**** 06/13/17 07:39:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Nori\Desktop\ELT IV\Trabalho\Simulacao\amplificador_push_pull_ab-pspicefiles\schematic1\bi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN 1m 10m 9m 1u 
+.FOUR 1k 10 V([VO]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIFICADOR_PUSH_PULL_AB
+R_RC11         N14804 VCC+  2.4k TC=0,0 
+R_RE12         N14828 N14808  82 TC=0,0 
+R_RE11         N14828 N14812  82 TC=0,0 
+R_RB11         VCC- N14828  8.2k TC=0,0 
+R_RE21         N15285 VCC+  1.8k TC=0,0 
+R_RE14         N15488 N19788  82 TC=0,0 
+R_RE13         N15500 N19788  83 TC=0,0 
+R_RC12         VCC- N15504  2.4k TC=0,0 
+R_R4         0 N15315  47k TC=0,0 
+R_RE22         VCC- N15771  1.8k TC=0,0 
+R_R3         N16077 N15950  13k TC=0,0 
+R_RE4         N16405 N16323  3.6k TC=0,0 
+R_RE31         VO N16369  0.22 TC=0,0 
+R_RE32         N16431 VO  0.22 TC=0,0 
+Q_Q1         N15937 N14804 N15285 BC559B 
+Q_Q2         N15504 N15315 N15488 BC559B 
+Q_Q3         VCC- N16987 N15500 BC559B 
+Q_Q4         VCC+ N16987 N14812 BC549B 
+Q_Q5         N14804 N15315 N14808 BC549B 
+Q_Q6         N16077 N15504 N15771 BC549B 
+Q_Q7         N15937 N15950 N16077 BC549B 
+Q_Q8         VCC+ N15937 N16323 QBC337-16/PLP 
+Q_Q10         VCC+ N16323 N16369 TIP29
+Q_Q11         VCC- N16405 N16431 TIP30
+V_V1         VCC+ 0 18V
+V_V2         0 VCC- 18V
+C_C4         N15315 N15620  220n  TC=0,0 
+C_C1         0 VCC+  100u  TC=0,0 
+C_C2         0 VCC-  100u  TC=0,0 
+R_R2         N16431 N16987  47k TC=0,0 
+R_R1         N16871 N16987  2.2k TC=0,0 
+C_C3         N16871 0  47u  TC=0,0 
+R_RL         0 VO  8 TC=0,0 
+V_V3         N15620 0  AC 1
++SIN 0 0.6 20k 0 0 0
+R_RB12         N19788 VCC+  8.2k TC=0,0 
+R_R5         N15937 N15950  30k TC=0,0 
+Q_Q12         VCC- N16077 N16405 BC327_1 
+C_C5         N16987 N16431  10p  TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 06/13/17 07:39:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Nori\Desktop\ELT IV\Trabalho\Simulacao\amplificador_push_pull_ab-pspicefiles\schematic1\bi
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC559B          BC549B          QBC337-16/PLP   TIP29           
+               PNP             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS    1.020000E-15    7.049000E-15   48.870000E-15    2.447000E-12 
+          BF  289.6           375.6           207.2           208.2          
+          NF    1               1               1.002           1            
+         VAF   51.26           59.93          184.8           100            
+         IKF     .1026           .08707          .902            .9743       
+         ISE    9.846000E-15   56.030000E-15    2.552000E-15   70.690000E-12 
+          NE    1.845           1.553           1.65            1.565        
+          BR    6.124           2.886          21.85           12.59         
+          NR    1               1               1.002           1            
+         VAR                                   20                            
+         IKR     .2035          5.426            .1             3.86         
+         ISC    1.113000E-15    7.371000E-12   70.060000E-15   11.680000E-09 
+          NC    1.97            1.508           1.25            1.835        
+          NK     .5413           .4901                           .6134       
+         ISS    0               0               0               0            
+          RB                                   50                .1          
+         RBM                                    2                            
+         IRB                                  200.000000E-06                 
+          RE    0               0                .119           0            
+          RC    1.078           1.175            .25             .4685       
+         CJE   30.000000E-12   11.500000E-12   42.170000E-12  188.500000E-12 
+         VJE     .5              .5              .6596           .75         
+         MJE     .3333           .6558           .3434           .4878       
+         CJC    9.810000E-12    5.500000E-12   17.340000E-12  142.000000E-12 
+         VJC     .4865           .4924           .1419           .75         
+         MJC     .332            .3132           .3484           .4353       
+        XCJC    1               1                .455           1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+         MJS                                     .333                        
+          FC                                     .652                        
+          TF  612.400000E-12  417.300000E-12  600.000000E-12   19.850000E-09 
+         XTF   25.55           39.51            2.1             5.945        
+         VTF   10              10               2.4            10            
+         ITF    1.287           1.512            .79          164.1          
+         PTF                                   86                            
+          TR   10.000000E-09   10.000000E-09   35.000000E-09  194.200000E-09 
+         XTB    1.5             1.5                             1.5          
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.42            2.42         
+           D     .52             .87             .87             .87         
+
+
+               TIP30           BC327_1         
+               PNP             PNP             
+       LEVEL    1               1            
+          IS   51.230000E-15  230.000000E-15 
+          BF  434.1           504.327        
+          NF    1               1            
+         VAF  100              26            
+         IKF     .3883           .78         
+         ISE   51.230000E-15   39.284000E-15 
+          NE    1.22            1.944        
+          BR   55.47           23            
+          NR    1               1.002        
+         VAR                    4.5          
+         IKR   10.87             .195        
+         ISC   51.230000E-15  118.000000E-18 
+          NC    1.205           3.025        
+          NK     .5544                       
+         ISS    0               0            
+          RB     .1              .8          
+         RBM                     .4          
+         IRB                  100.000000E-06 
+          RE    0                .203        
+          RC     .3443           .262        
+         CJE  179.900000E-12   57.177000E-12 
+         VJE     .75            1            
+         MJE     .4294           .47         
+         CJC  136.900000E-12   28.600000E-12 
+         VJC     .75            1            
+         MJC     .3155           .52         
+        XCJC    1                .65         
+         CJS    0               0            
+         VJS     .75             .75         
+          FC                     .75         
+          TF   13.050000E-09  664.000000E-12 
+         XTF    1.573           6.35         
+         VTF   10               2            
+         ITF    6.85             .25         
+         PTF                    1            
+          TR   20.250000E-09    2.600000E-09 
+         XTB    2.2             1.7          
+         XTI                    4.8          
+          KF    0               5.000000E-15 
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 06/13/17 07:39:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Nori\Desktop\ELT IV\Trabalho\Simulacao\amplificador_push_pull_ab-pspicefiles\schematic1\bi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)    -.0063  ( VCC+)   18.0000  ( VCC-)  -18.0000  (N14804)   15.4710     
+
+(N14808)    -.6704 (N14812)    -.6718 (N14828)    -.7573 (N15285)   16.1790     
+
+(N15315)    -.0106 (N15488)     .6978 (N15500)     .6949 (N15504)  -15.5220     
+
+(N15620)    0.0000 (N15771)  -16.1810 (N15937)    1.1103 (N15950)    -.5178     
+
+(N16077)   -1.1802 (N16323)     .5227 (N16369)    -.0058 (N16405)    -.6436     
+
+(N16431)    -.0069 (N16871)    -.0132 (N16987)    -.0132 (N19788)     .7830 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.710E-03
+    V_V2        -8.493E-03
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.92E-01  WATTS
+
+
+**** 06/13/17 07:39:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Nori\Desktop\ELT IV\Trabalho\Simulacao\amplificador_push_pull_ab-pspicefiles\schematic1\bi
+
+
+ ****     FOURIER ANALYSIS                 TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+FOURIER COMPONENTS OF TRANSIENT RESPONSE V(VO)
+
+
+
+ DC COMPONENT =   4.1849E-02
+
+ HARMONIC   FREQUENCY     FOURIER     NORMALIZED     PHASE     NORMALIZED
+    NO         (HZ)      COMPONENT     COMPONENT     (DEG)     PHASE (DEG)
+
+     1    1.0000E+03   1.1725E-02   1.0000E+00  -1.2455E+02   0.0000E+00
+     2    2.0000E+03   8.8760E-03   7.5700E-01  -3.4560E+01   2.1453E+02
+     3    3.0000E+03   4.5189E-03   3.8540E-01  -7.0606E+01   3.0304E+02
+     4    4.0000E+03   2.4537E-03   2.0926E-01  -1.3709E+02   3.6110E+02
+     5    5.0000E+03   7.0537E-04   6.0159E-02  -9.2240E+00   6.1351E+02
+     6    6.0000E+03   3.2040E-03   2.7326E-01  -1.1623E+02   6.3105E+02
+     7    7.0000E+03   2.6707E-03   2.2777E-01   1.4205E+02   1.0139E+03
+     8    8.0000E+03   7.0768E-03   6.0356E-01   1.4803E+02   1.1444E+03
+     9    9.0000E+03   8.4806E-03   7.2328E-01  -3.8544E+01   1.0824E+03
+    10    1.0000E+04   4.3069E-03   3.6732E-01   2.8736E+01   1.2742E+03
+
+
+     TOTAL HARMONIC DISTORTION =   1.3849E+02 PERCENT
+
+
+          JOB CONCLUDED
+
+**** 06/13/17 07:39:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Nori\Desktop\ELT IV\Trabalho\Simulacao\amplificador_push_pull_ab-pspicefiles\schematic1\bi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .89
+

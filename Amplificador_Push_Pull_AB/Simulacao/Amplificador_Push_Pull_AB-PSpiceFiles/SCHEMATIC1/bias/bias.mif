@@ -1,0 +1,6 @@
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\ebipolar.lib, offset=13963, size=367
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\ebipolar.lib, offset=8989, size=389
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\phil_bjt.lib, offset=11429, size=619
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\pwrbjt.lib, offset=215684, size=342
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\pwrbjt.lib, offset=217058, size=344
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\infineon_s_afbjt.lib, offset=14262, size=696
